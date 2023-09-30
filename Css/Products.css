@@ -1,0 +1,238 @@
+  /* Styles for the Navbar */
+.navbar {
+  background-color: #edd7d7; /* Background color of the navbar */
+  color: #fff; /* Text color in the navbar */
+  width: 100%; /* Navbar spans the full width of the screen */
+}
+
+.navbar a {
+  color: #090909; /* Default color for navigation links */
+}
+
+.navbar a:hover {
+  color: #fff9f9; /* Color for navigation links on hover */
+}
+
+/* Styles for smaller images (e.g., social media icons) */
+.image-chat2 {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: px; /* Replace 'px' with a specific value */
+}
+
+/* Nav bar deopdown menu hover styling */
+.dropdown a:hover{
+  color: #090909;
+  background-color: #edd7d7;
+}
+
+/* Styles for horizontal lines */
+#horizantal-line1 {
+  width: 450px;
+  height: 60px;
+  background-color: #edd7d7; /* Background color for the line */
+  border-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  align-items: right; /* Align items to the right */
+}
+
+#horizantal-line {
+  width: 100%;
+  height: 60px;
+  background-color: #edd7d7; /* Background color for the line */
+  border-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the custom carousel (slider) */
+.custom-carousel {
+  width: 50%; /* Adjust the width as needed */
+  margin: auto; /* Center the carousel */
+  border-top: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Styles for the carousel images */
+.carousel-inner {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.carousel-inner .carousel-item {
+  max-height: 30%; /* Adjust maximum height of carousel items */
+}
+
+/* Styles for carousel control icons (previous and next) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Background color of control icons */
+  color: #090909; /* Color of control icons */
+}
+
+/* Styles for category cards */
+.category-card {
+  width: 250px;
+  background-color: #f2f2f2; /* Background color of the card */
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out; /* Smooth transition on hover */
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.category-card:hover {
+  transform: scale(1.1); /* Enlarge the card on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+/* Margins for spacing */
+#space {
+  margin-top: 25px;
+}
+
+#spaceio {
+  margin-bottom: 10px;
+}
+
+/* Define the custom-center class for centering elements */
+.custom-center {
+  display: block;
+  margin: 0 auto; /* Set left and right margin to auto */
+}
+
+/* Remove the default link styles */
+a:not([class]) {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+/* Style the link when hovered */
+a:not([class]):hover {
+  color: #0087fd; /* Change link color on hover */
+}
+
+/* Styles for the footer */
+footer {
+  color: #edd7d7; /* Text color in the footer */
+  background-color: #090909; /* Background color of the footer */
+}
+
+/* Styles for product cards */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+}
+
+/* Styles for the "Add to Cart" button on product cards */
+.add-to-cart {
+  position: absolute;
+  bottom: 20; /* Change this to the desired value */
+  left: 0;
+  top: 65%; /* Change this to the desired value */
+  width: 40%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+  outline: none; /* Remove focus outline */
+  margin-left: 100px;
+}
+
+.product-card:hover .add-to-cart {
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+
+/* Styles for product prices */
+.price {
+  font-weight: bold;
+  color: #dd3517; /* Change this to your desired color */
+}
+
+/* Styles for cart count */
+.cart-count {
+  background-color: #ffffff;
+  color: rgb(2, 1, 1);
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-count.cart-count-animation {
+  transform: scale(1.2); /* Enlarge the cart count on interaction */
+}
+
+/* Styles for icons */
+.icon {
+  width: 40px;
+  height: 20%;
+}
+
+/* Margin for the search element */
+#search {
+  margin-right: 20px;
+}
+
+/* Preloader styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000; /* A high z-index to ensure it's on top */
+}
+
+.preloader img {
+  width: 20rem;
+  height: 10rem;
+}
+
+/* Scroll-to-top button styles */
+.scroll-top {
+  position: fixed; /* Fixed position for the button */
+  bottom: 5%;
+  right: 3%;
+  background-color: black;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  animation: grow 1s linear infinite alternate; /* Animation for the button */
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.scroll-top img {
+  width: 1.5rem; /* Size of the arrow icon */
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(0.8); /* Initial scale */
+  }
+  100% {
+      transform: scale(1); /* Full scale */
+  }
+}
+
+/* Show the scroll-to-top button when scrolling down */
+.scroll-top.show {
+  display: block;
+}
+
+
+
+
+

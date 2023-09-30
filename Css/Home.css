@@ -1,0 +1,171 @@
+/* Styles for the Navbar */
+.navbar {
+  background-color: #edd7d7; /* Background color of the navbar */
+  color: #fff; /* Text color in the navbar */
+}
+
+.navbar a {
+  color: #090909; /* Default color for navigation links */
+}
+
+.navbar a:hover {
+  color: #fff9f9; /* Color for navigation links on hover */
+}
+
+/* Styles for social media icons */
+.social {
+  width: 80%;
+  height: 80%;
+}
+
+/* Styles for the main product image */
+.product-image2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: 10px;
+  border-top: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styles for smaller images (e.g., social media icons) */
+.image-chat2 {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: px; /* Replace 'px' with a specific value */
+}
+
+/* Styles for links */
+a:not([class]) {
+  text-decoration: none; /* Remove underlines from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+/* Styles for links on hover */
+a:not([class]):hover {
+  color: #0087fd; /* Change link color on hover */
+}
+
+/* Styles for the footer */
+footer {
+  color: #edd7d7; /* Text color in the footer */
+  background-color: #090909; /* Background color of the footer */
+}
+
+/* Styles for horizontal lines */
+#horizantal-line {
+  width: 100%;
+  height: 100%;
+  background-color: #edd7d7; /* Background color for the line */
+  border-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the custom carousel (slider) */
+.custom-carousel {
+  width: 50%; /* Adjust the width as needed */
+  margin: auto; /* Center the carousel */
+  border-top: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Styles for the carousel images */
+.carousel-inner {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.carousel-inner .carousel-item {
+  max-height: 30%; /* Adjust maximum height of carousel items */
+}
+
+/* Styles for carousel control icons (previous and next) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Background color of control icons */
+  color: #090909; /* Color of control icons */
+}
+
+/* Margins for spacing */
+#space {
+  margin-top: 25px;
+}
+
+#spacio {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+#spaceio {
+  margin-bottom: 10px;
+}
+
+/* Define the custom-center class for centering elements */
+.custom-center {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Styles for the preloader (loading screen) */
+.preloader {
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Background color of the preloader */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000; /* A high z-index to ensure it's on top */
+}
+
+/* Styles for the image inside the preloader */
+.preloader img {
+  width: 20rem;
+  height: 10rem;
+}
+
+/* Scroll-to-top button styles */
+.scroll-top {
+  position: fixed; /* Fixed position for the button */
+  bottom: 5%;
+  right: 3%;
+  background-color: black; /* Background color of the button */
+  padding: 0.8rem;
+  border-radius: 1rem;
+  animation: grow 1s linear infinite alternate; /* Animation for the button */
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.scroll-top img {
+  width: 1.5rem; /* Size of the arrow icon */
+}
+
+/* Keyframe animation for the scroll-to-top button */
+@keyframes grow {
+  0% {
+      transform: scale(0.8); /* Initial scale */
+  }
+  100% {
+      transform: scale(1); /* Full scale */
+  }
+}
+
+/* Show the scroll-to-top button when scrolling down */
+.scroll-top.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+  

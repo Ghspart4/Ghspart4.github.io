@@ -1,0 +1,182 @@
+   /* Navbar styling */
+.navbar {
+  background-color: #edd7d7; /* Background color */
+  color: #fff; /* Text color */
+}
+
+.navbar a {
+  color: #090909; /* Link color */
+}
+
+.navbar a:hover {
+  color: #fff9f9; /* Link color on hover */
+}
+
+/* Styling for a custom column with borders */
+.custom-column {
+  border-left: 7px solid #edd7d7; 
+  border-right: 7px solid #edd7d7; 
+}
+
+/* Hide the vertical lines on medium and smaller screens */
+@media (max-width: 992px) { 
+  .custom-column {
+      border-left: none; 
+      border-right: none; 
+  }
+}
+
+/* Styling for vertical lines */
+#vertical-line {
+  width: 1pc;
+  height: 25pc;
+  background-color: #edd7d7;
+}
+
+/* Styling for horizontal lines */
+#horizantal {
+  width: 100%;
+  height: 7px;
+  background-color: #edd7d7;
+}
+
+/* Styling for images with custom dimensions and border radius */
+.image-chat {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: px;
+}
+ /* css styling for images*/
+.image-chat2 {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: px;
+}
+
+/* Styling for buttons */
+.btn-2 {
+  width: 120px;
+  margin: 0 auto;
+  background-color: #edd7d7;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-2:hover {
+  background-color: rgb(192, 178, 178);
+  color: #333;
+}
+
+/* Styling for chat pop-ups */
+.chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 9999;
+}
+
+/* Styling for close chat buttons */
+.close-chat-btn {
+  width: 70px;
+  margin: 0 auto;
+  background-color: #edd7d7;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the footer */
+footer {
+  color: #edd7d7; /* Text color */
+  background-color: #090909; /* Background color */
+}
+
+/* Margin spacing utility classes */
+#space {
+  margin-top: 25px;
+}
+
+#spacio {
+  margin-top: 45px;
+}
+
+#spaceio {
+  margin-bottom: 10px;
+}
+
+/* Centering utility class */
+.custom-center {
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Remove default link styles and add styles for link hover */
+a:not([class]) {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+a:not([class]):hover {
+  color: #0087fd; /* Change link color on hover */
+}
+
+/* Additional styling for specific elements */
+#buttonspace {
+  margin-bottom: 5px;
+}
+
+/* Preloader styling */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+}
+
+ /* css styling for preloading image*/
+.preloader img {
+  width: 20rem;
+  height: 10rem;
+}
+
+/* Scroll to top button styling */
+.scroll-top {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  background-color: black;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  animation: grow 1s linear infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top img {
+  width: 1.5rem;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(0.8);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.scroll-top.show {
+  display: block;
+}
